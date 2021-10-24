@@ -17,7 +17,8 @@ export default class ImageApiService {
       .then(data => {
         this.incrementPage();
         return data.hits;
-      });
+      })
+      .catch(error => console.log(error));
   }
 
   get query() {

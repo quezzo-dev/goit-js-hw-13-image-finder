@@ -1,0 +1,20 @@
+img {
+  width: 300px;
+  height: 150px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+}
+
+.stats-item {
+  &:not(:last-child) {
+    margin: 0px 10px 0px 0px;
+  }
+}
